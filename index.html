@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="">
+  <main id="sign-up" class="">
     <div class="signup">
       <section class="image">
       </section>
@@ -25,15 +25,15 @@
         </ul>
         <form>
           <label>
-            Email address
+            <h3>Email address <span class="error"></span></h3>
             <input type="email" id="email" placeholder="email@comany.com">
-            <button type="button">Subscribe to monthly newsletter</button>
+            <input type="submit" class="submit btn" value="Subscribe to monthly newsletter">
           </label>
         </form>  
       </section>
     </div>
   </main>
-  <section class="hidden">
+  <section id="success" class="hidden">
     <div class="success">
       <img src="assets/images/icon-success.svg" alt="Icon success">
       <h1>Thanks for subscribing!</h1>
@@ -41,7 +41,7 @@
         A confirmation email has been sent to <strong>ash@loremcompany.com</strong> 
         Please open it and click the button inside to confirm your subscription
       </p>
-      <button>Dismiss message</button>
+      <button class="btn" id="go-home">Dismiss message</button>
     </div>
   </section>
   <script src="index.js"></script>
